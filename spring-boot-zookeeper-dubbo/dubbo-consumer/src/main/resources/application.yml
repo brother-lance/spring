@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: demo-service
+dubbo:
+  application:
+    name: demo-service # 应用名称
+  registry:
+    address: middle-1:2181,middle-2:2181,middle-3:2181 # 连接地址
+    protocol: zookeeper # 协议
+    check: true # 是否启动连接
+    port: -1 # 端口
+  scan:
+    base-packages: com.system.base.provider
+

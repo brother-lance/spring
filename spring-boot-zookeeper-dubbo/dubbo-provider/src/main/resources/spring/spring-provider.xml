@@ -1,0 +1,14 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+    http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="demo-provider" owner="lance.wu"/>
+    <dubbo:registry address="middle-1:2181,middle-2:2181,middle-3:2181"/>
+    <dubbo:protocol name="dubbo"></dubbo:protocol>
+    <dubbo:annotation package="con.system.base"/>
+    <dubbo:service ref="demoFacadeImpl" version="1.0.0" group="demoGroup"
+                   interface="com.system.base.api.facade.DemoFacade"/>
+
+</beans>

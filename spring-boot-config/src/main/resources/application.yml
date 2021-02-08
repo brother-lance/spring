@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+config:
+  name: value测试
+
+definition:
+  name: 自定义名称
+  config:
+    name: 自定义配置名称
