@@ -13,5 +13,5 @@ dubbo:
     check: true # 是否启动连接
     port: -1 # 端口
   scan:
-    base-packages: com.system.base.provider
+    base-packages: com.system.base
 

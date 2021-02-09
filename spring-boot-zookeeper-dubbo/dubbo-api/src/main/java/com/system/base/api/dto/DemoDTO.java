@@ -5,11 +5,11 @@ import lombok.ToString;
 
 @Data
 @ToString
-public class DemoDTO {
+public class DemoDTO implements java.io.Serializable {
 
     private long id;
 
     private String name;
 
-    private String info;
+    private String message;
 }

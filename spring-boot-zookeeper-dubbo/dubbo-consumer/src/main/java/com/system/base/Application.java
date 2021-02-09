@@ -6,7 +6,6 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ImportResource;
 
-@ImportResource(locations = {"classpath:spring/spring-*.xml"})
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
 

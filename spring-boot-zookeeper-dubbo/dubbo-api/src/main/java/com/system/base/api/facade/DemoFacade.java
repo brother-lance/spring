@@ -5,5 +5,5 @@ import com.system.base.api.dto.DemoDTO;
 
 public interface DemoFacade {
 
-    void call(String logId, DemoDTO demoDTO);
+    DemoDTO call(String logId, DemoDTO demoDTO);
 }
