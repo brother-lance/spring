@@ -7,13 +7,13 @@ import com.system.base.consumer.vo.DemoVO;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
 @Slf4j
 @RestController
+@RequestMapping("/api/v1.0/dubbo-consumer")
 public class DemoController {
 
     @Autowired
@@ -22,8 +22,8 @@ public class DemoController {
     @Reference(version = "1.0.0", group = "demoGroup", check = false)
     private DemoFacade demoFacade;
 
-    @GetMapping
-    public DemoVO get(DemoVO demoVO) {
+    @PostMapping
+    public DemoVO get(@RequestBody DemoVO demoVO) {
         log.info("consumer param:{}", demoVO);
         String logId = UUID.randomUUID().toString();
         return objectMapper.convertValue(demoFacade.call(logId,

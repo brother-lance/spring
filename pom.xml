@@ -18,6 +18,7 @@
         <module>spring-boot-zookeeper</module>
         <module>spring-boot-kafka</module>
         <module>spring-boot-zookeeper-dubbo</module>
+        <module>spring-boot-actuator</module>
     </modules>
 
     <parent>
