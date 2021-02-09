@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: simple-redis
+  redis:
+    sentinel:
+      nodes: 10.254.106.240:26379,10.254.82.185:26379,10.254.147.116:26379
+      # 实例名称可以变化
+      master: cloud-local
+    # Redis服务器连接密码（默认为空）
+    password: ""
+    # 连接超时时间（毫秒）
+    timeout: 1000
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
