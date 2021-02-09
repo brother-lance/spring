@@ -22,6 +22,10 @@
         <module>spring-boot-data-redis</module>
         <module>spring-boot-data-mongo</module>
         <module>spring-boot-data-mongo/mongo-simple</module>
+        <module>spring-cloud-eureka</module>
+        <module>spring-cloud-eureka/eureka-server</module>
+        <module>spring-cloud-eureka/eureka-client</module>
+        <module>spring-cloud-eureka/eureka-client2</module>
     </modules>
 
     <parent>
