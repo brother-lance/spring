@@ -2,7 +2,7 @@ package com.system.base.kafka;
 
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.system.base.SpringBaseTest;
+import com.system.base.SpringBaseTests;
 import org.junit.Test;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @SuppressWarnings("all")
-public class KafkaControllerTest extends SpringBaseTest {
+public class KafkaControllerTest extends SpringBaseTests {
 
     private URL url;
     private final RestTemplate restTemplate = new RestTemplate();
