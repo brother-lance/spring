@@ -20,6 +20,8 @@
         <module>spring-boot-zookeeper-dubbo</module>
         <module>spring-boot-data</module>
         <module>spring-boot-data-redis</module>
+        <module>spring-boot-data-mongo</module>
+        <module>spring-boot-data-mongo/mongo-simple</module>
     </modules>
 
     <parent>

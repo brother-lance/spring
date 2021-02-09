@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: simple-mongo
+  data:
+    mongodb:
+      uri: mongodb://10.254.254.151:27017/demo
+      ## 集群链接模式-分片
+      # uri: mongodb://192.168.1.11:27017,192.168.1.12:27017,192.168.1.13:27017/demo
+      password: cloud
+      username: cloud
