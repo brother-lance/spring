@@ -23,6 +23,7 @@ import java.util.jar.JarFile;
  * @Date 2021/2/22 17:32
  **/
 @Component
+@Deprecated
 public class ModuleClassLoader   extends URLClassLoader {
 
     //属于本类加载器加载的jar包
