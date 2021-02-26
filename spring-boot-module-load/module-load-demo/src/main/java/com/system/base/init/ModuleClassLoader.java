@@ -30,13 +30,13 @@ public class ModuleClassLoader   extends URLClassLoader {
     private JarFile jarFile;
 
     //保存已经加载过的Class对象
-    private Map<String,Class> cacheClassMap = new HashMap<>();
+    private final Map<String,Class> cacheClassMap = new HashMap<>();
 
     //保存本类加载器加载的class字节码
-    private Map<String,byte[]> classBytesMap = new HashMap<>();
+    private final Map<String,byte[]> classBytesMap = new HashMap<>();
 
     //需要注册的spring bean的name集合
-    private List<String> registeredBean = new ArrayList<>();
+    private final List<String> registeredBean = new ArrayList<>();
 
     //构造
     public ModuleClassLoader(URL[] urls, ClassLoader parent) {

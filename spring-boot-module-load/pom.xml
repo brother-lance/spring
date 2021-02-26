@@ -10,9 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <modules>
-        <module>moduleAPI</module>
-        <module>moduleDemo</module>
-        <module>moduleAPIImpl</module>
+        <module>module-load-api</module>
+        <module>module-load-demo</module>
+        <module>module-load-api-impl</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -22,31 +22,10 @@
         <dependencies>
             <dependency>
                 <groupId>com.system.base</groupId>
-                <artifactId>moduleAPI</artifactId>
+                <artifactId>module-load-api</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.xx.webapps.api.main.WebappsApiBidMain</mainClass>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
-
 
 </project>

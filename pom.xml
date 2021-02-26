@@ -9,7 +9,6 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>demo</module>
         <module>spring-boot-web</module>
         <module>spring-cloud</module>
         <module>spring-boot-config</module>
@@ -54,14 +53,28 @@
         </dependencies>
     </dependencyManagement>
 
-    <!-- 导入插件  -->
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.xx.webapps.api.main.WebappsApiBidMain</mainClass>
+                    <mainClass>com.system.xx</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -73,4 +86,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

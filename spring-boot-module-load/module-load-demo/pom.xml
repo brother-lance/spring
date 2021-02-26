@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>moduleDemo</artifactId>
+    <artifactId>module-load-demo</artifactId>
 
     <dependencies>
         <dependency>
@@ -31,7 +31,7 @@
 
         <dependency>
             <groupId>com.system.base</groupId>
-            <artifactId>moduleAPI</artifactId>
+            <artifactId>module-load-api</artifactId>
         </dependency>
 
     </dependencies>
