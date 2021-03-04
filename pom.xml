@@ -27,6 +27,7 @@
         <module>spring-cloud-eureka/eureka-client2</module>
         <module>spring-boot-module-load</module>
         <module>spring-boot-log</module>
+        <module>spring-boot-swagger</module>
     </modules>
 
     <parent>
